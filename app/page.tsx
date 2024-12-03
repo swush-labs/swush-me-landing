@@ -7,10 +7,9 @@ export default function Home() {
         muted
         playsInline
         className="absolute inset-0 h-full w-full object-cover md:object-contain lg:object-cover"
-        poster="/video-poster.jpg"
       >
         <source
-          src="/swush-vid.mp4"
+          src={process.env.NEXT_PUBLIC_BASE_PATH + "/swush-vid.mp4"}
           type="video/mp4"
         />
         Your browser does not support the video tag.
